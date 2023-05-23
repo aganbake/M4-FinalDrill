@@ -85,11 +85,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   const response2 = await results2.json();
   data2 = response2.results;
 
-  genPopular = generator(data.slice(0, 5), "popular");
+  const responses = data.concat(data2);
+
+  genPopular = generator(responses.slice(0, 5), "popular");
   genPopular.next();
-  genSecondary = generator(data.slice(5, 10), "secondary");
+  genSecondary = generator(responses.slice(5, 10), "secondary");
   genSecondary.next();
-  genOthers = generator(data2.slice(0, 5), "others");
+  genOthers = generator(responses.slice(10, 15), "others");
   genOthers.next();
 
   oneToFive.addEventListener("mouseover", popular);
