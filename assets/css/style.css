@@ -1,5 +1,6 @@
 body {
   margin-top: 20px;
+  font-family: "Ubuntu", sans-serif;
 }
 .timeline_area {
   position: relative;
@@ -23,11 +24,6 @@ body {
   background-color: lightskyblue;
 }
 
-/* @media only screen and (max-width: 575px) {
-  .single-timeline-area {
-    padding-left: 100px;
-  }
-} */
 .single-timeline-area .timeline-date {
   position: absolute;
   width: 180px;
@@ -40,11 +36,6 @@ body {
   justify-content: flex-end;
   padding-right: 60px;
 }
-/* @media only screen and (max-width: 575px) {
-  .single-timeline-area .timeline-date {
-    width: 100px;
-  }
-} */
 .single-timeline-area .timeline-date::after {
   position: absolute;
   width: 3px;
@@ -81,12 +72,6 @@ body {
   box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
   border: 1px solid #ebebeb;
 }
-/* @media only screen and (max-width: 575px) {
-  .single-timeline-area .single-timeline-content {
-    padding: 20px;
-  }
-} */
-
 .single-timeline-area .single-timeline-content .timeline-icon {
   width: 30px;
   height: 30px;
@@ -98,19 +83,7 @@ body {
   color: #ffffff;
   line-height: 30px;
 }
-/* .single-timeline-area .single-timeline-content .timeline-text h6 {
-  -webkit-transition-duration: 500ms;
-  transition-duration: 500ms;
-} */
 .single-timeline-area .single-timeline-content .timeline-text p {
   font-size: 13px;
   margin-bottom: 0;
 }
-/* .single-timeline-area .single-timeline-content:hover .timeline-icon,
-.single-timeline-area .single-timeline-content:focus .timeline-icon {
-  background-color: #020710;
-}
-.single-timeline-area .single-timeline-content:hover .timeline-text h6,
-.single-timeline-area .single-timeline-content:focus .timeline-text h6 {
-  color: #3f43fd;
-} */

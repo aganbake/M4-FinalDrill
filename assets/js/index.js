@@ -1,10 +1,5 @@
 const BASE_URL = "https://swapi.dev/api/people/?page=";
-let genPopular,
-  genSecondary,
-  genOthers,
-  data,
-  data2,
-  page = 0;
+let genPopular, genSecondary, genOthers, data, data2;
 
 function* generator(character, type) {
   const popular = document.getElementById("popular");
