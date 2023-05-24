@@ -14,8 +14,6 @@ function* generator(character, type) {
 
   for (let temp of character) {
     yield temp.name;
-    yield temp.height;
-    yield temp.mass;
 
     if (create === "popular") {
       popular.innerHTML += `
