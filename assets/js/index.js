@@ -12,7 +12,7 @@ function* generator(character, type) {
 
     if (create === "popular") {
       popular.innerHTML += `
-      <div class="col-12 col-md-6 col-lg-4">
+      <div class="col-12 col-md-6 col-lg-4 w3-animate-left">
         <div class="single-timeline-content d-flex">
           <div class="timeline-icon popular"></div>
             <div class="timeline-text">
@@ -24,7 +24,7 @@ function* generator(character, type) {
       `;
     } else if (create === "secondary") {
       secondary.innerHTML += `
-      <div class="col-12 col-md-6 col-lg-4">
+      <div class="col-12 col-md-6 col-lg-4 w3-animate-left">
         <div class="single-timeline-content d-flex">
           <div class="timeline-icon secondary"></div>
             <div class="timeline-text">
@@ -36,7 +36,7 @@ function* generator(character, type) {
       `;
     } else {
       others.innerHTML += `
-      <div class="col-12 col-md-6 col-lg-4">
+      <div class="col-12 col-md-6 col-lg-4 w3-animate-left">
         <div class="single-timeline-content d-flex">
           <div class="timeline-icon others"></div>
             <div class="timeline-text">
